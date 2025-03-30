@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krithick's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeInUp { animation: fadeInUp 1s ease-in-out; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header with Navbar -->
+    <header class="bg-gray-800 py-4 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-400">My Portfolio</h1>
+            <button id="menu-btn" class="md:hidden text-green-400 text-2xl">
+                &#9776; <!-- Hamburger Icon -->
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6 text-lg md:static absolute top-16 right-0 w-full bg-gray-800 md:w-auto md:bg-transparent md:flex-row flex-col text-right">
+                <li><a href="index.html" class="block py-2 px-4 hover:text-green-400">Home</a></li>
+                <li><a href="#achievements" class="block py-2 px-4 hover:text-green-400">Achievements</a></li>
+                <li><a href="#certifications" class="block py-2 px-4 hover:text-green-400">Certifications</a></li>
+                <li><a href="#projects" class="block py-2 px-4 hover:text-green-400">Projects</a></li>
+                <li><a href="#contact" class="block py-2 px-4 hover:text-green-400">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+<!-- Achievements Section -->
+<section id="achievements" class="py-16 bg-gray-900 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-green-400 text-center mb-12">Achievements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Vice Secretary -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+                <i class="fas fa-user-tie text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-semibold">Vice Secretary</h3>
+                <p class="text-gray-400 mt-2">Served as Vice Secretary and contributed to student development activities.</p>
+            </div>
+
+            <!-- Conducted Technical Event -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+                <i class="fas fa-code text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-semibold">Conducted Technical Sypomsim</h3>
+                <p class="text-gray-400 mt-2">Organized the SAMAR event, designed rulebooks, and created brochures.</p>
+            </div>
+
+            <!-- Frontend Training for Juniors -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+                <i class="fas fa-chalkboard-teacher text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-semibold">Frontend Training</h3>
+                <p class="text-gray-400 mt-2">Conducted a frontend session to help juniors enhance their web development skills.</p>
+            </div>
+
+            <!-- Guided Juniors in Project -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+                <i class="fas fa-laptop-code text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-semibold">Guided Juniors in Project</h3>
+                <p class="text-gray-400 mt-2">Mentored juniors in building projects to enhance their practical coding skills.</p>
+            </div>
+
+            <!-- Attended Hackathon -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+                <i class="fas fa-trophy text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-semibold">Hackathon Participation</h3>
+                <p class="text-gray-400 mt-2">Participated in a Hackathon at Asan Institute, gaining hands-on experience.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                <h3 class="text-3xl font-semibold mb-4 text-green-300">🥇 Won 1st Prize in 2 Colleges</h3>
+                <p class="text-gray-300 leading-relaxed">
+                    Competed against **20+ participants** in **two intercollegiate competitions** and secured **1st place** in both!
+                </p>
+                <ul class="mt-4 space-y-2">
+                    <li class="flex items-center"><i class="fas fa-trophy text-yellow-400 mr-2"></i> Web Development Competition</li>
+                    <li class="flex items-center"><i class="fas fa-trophy text-yellow-400 mr-2"></i> Web Development Competition</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Web Development Project Section -->
+<section id="college-website" class="py-16 bg-gradient-to-r from-green-400 to-blue-500 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-5xl font-bold text-center mb-12 animate-pulse">🚀 Developed College Website</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            
+            <!-- Left: Description -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+                <h3 class="text-3xl font-semibold mb-4">Built from Scratch</h3>
+                <p class="text-gray-300 leading-relaxed">
+                    Designed and developed a full-fledged **college website** from the ground up, 
+                    ensuring a **modern, responsive, and user-friendly** interface.
+                </p>
+                <ul class="mt-4 space-y-2">
+                    <li class="flex items-center"><i class="fas fa-check-circle text-green-300 mr-2"></i> No templates, fully custom-coded</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-green-300 mr-2"></i> Enhanced navigation & user experience</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-green-300 mr-2"></i> Optimized for speed & performance</li>
+                </ul>
+                <a href="https://www.thiruthangalnadarcollege.edu.in/git " target="_blank" 
+                    class="mt-6 inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform">
+                    Visit Website
+                </a>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="flex justify-center">
+                <img src="Screenshot_31-3-2025_42936_www.thiruthangalnadarcollege.edu.in.jpeg" alt="College Website" 
+                    class="w-3/4 max-w-sm md:max-w-md rounded-lg shadow-[0_10px_30px_rgba(255,255,255,0.5)] animate-bounce">
+            </div>          
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 mt-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-400">Connect with me</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.instagram.com/yourprofile" class="text-green-400 text-2xl hover:text-green-300"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/yourwhatsappnumber" class="text-green-400 text-2xl hover:text-green-300"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/yourprofile" class="text-green-400 text-2xl hover:text-green-300"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourgithubprofile" class="text-green-400 text-2xl hover:text-green-300"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="text-gray-500 mt-4">&copy; 2025 Krithick Nagarjun B S | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Typing Effect & Menu -->
+    <script>
+        var typed = new Typed("#typed-name", {
+            strings: ["Krithick Nagarjun"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            showCursor: false,
+            loop: false
+        });
+
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>

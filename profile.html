@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Krithick Nagarjun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <nav class="bg-gray-800 py-4 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-400">My Portfolio</h1>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6 text-lg">
+                <li><a href="index.html" class="hover:text-green-400 transition">Home</a></li>
+                <li><a href="#" class="hover:text-green-400 transition">Profile</a></li>
+                <li><a href="achievements.html" class="hover:text-green-400 transition">Achievements</a></li>
+                <li><a href="certifications.html" class="hover:text-green-400 transition">Certifications</a></li>
+                <li><a href="projects.html" class="hover:text-green-400 transition">Projects</a></li>
+                <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="md:hidden text-green-400 text-3xl focus:outline-none">
+                &#9776; <!-- Hamburger Icon -->
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="fixed top-0 right-0 w-2/3 h-full bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-300 md:hidden">
+        <button id="close-menu" class="absolute top-4 right-4 text-green-400 text-3xl">&times;</button>
+        <ul class="mt-16 space-y-6 text-lg text-center">
+            <li><a href="index.html" class="block py-2 hover:text-green-400 transition">Home</a></li>
+            <li><a href="#" class="block py-2 hover:text-green-400 transition">Profile</a></li>
+            <li><a href="achievements.html" class="block py-2 hover:text-green-400 transition">Achievements</a></li>
+            <li><a href="certifications.html" class="block py-2 hover:text-green-400 transition">Certifications</a></li>
+            <li><a href="projects.html" class="block py-2 hover:text-green-400 transition">Projects</a></li>
+            <li><a href="contact.html" class="block py-2 hover:text-green-400 transition">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Profile Section -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-green-400">About Me</h2>
+        <p class="text-lg text-gray-300 mt-4">I'm Krithick Nagarjun, a passionate web developer and designer. I specialize in creating responsive and modern websites using HTML, CSS, JavaScript, Tailwind, and Laravel.</p>
+        
+        <!-- Education -->
+        <div class="mt-8">
+            <h3 class="text-3xl font-semibold text-green-400">Education</h3>
+            <ul class="list-disc list-inside text-gray-300 mt-2">
+                <li>Bachelor's in Computer Applications - Thiruthangal Nadar College</li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="mt-8">
+            <h3 class="text-3xl font-semibold text-green-400">Skills</h3>
+            <div class="flex flex-wrap gap-3 mt-4">
+                <span class="bg-green-500 px-4 py-2 rounded-full text-white">HTML</span>
+                <span class="bg-green-500 px-4 py-2 rounded-full text-white">CSS</span>
+                <span class="bg-green-500 px-4 py-2 rounded-full text-white">JavaScript</span>
+                <span class="bg-green-500 px-4 py-2 rounded-full text-white">Tailwind CSS</span>
+                <span class="bg-green-500 px-4 py-2 rounded-full text-white">MySQL</span>
+            </div>
+        </div>
+
+        <!-- Interests -->
+        <div class="mt-8">
+            <h3 class="text-3xl font-semibold text-green-400">Interests</h3>
+            <p class="text-lg text-gray-300 mt-2">Web development, UI/UX design, Competitive programming, and Open-source contributions.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 mt-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-400">Connect with me</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-green-400 text-2xl hover:text-green-300 transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank" class="text-green-400 text-2xl hover:text-green-300 transition">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-green-400 text-2xl hover:text-green-300 transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourgithubprofile" target="_blank" class="text-green-400 text-2xl hover:text-green-300 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 mt-4">&copy; 2025 Krithick Nagarjun B S | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenu = document.getElementById("close-menu");
+
+        // Open Menu
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("translate-x-full");
+        });
+
+        // Close Menu
+        closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.add("translate-x-full");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<header class="bg-gray-800 py-4 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-green-400">My Portfolio</h1>
+        <button id="menu-btn" class="md:hidden text-green-400 text-2xl">
+            &#9776; <!-- Hamburger Icon -->
+        </button>
+        <ul id="menu" class="hidden md:flex space-x-6 text-lg md:static absolute top-16 right-0 w-full bg-gray-800 md:w-auto md:bg-transparent md:flex-row flex-col text-right">
+            <li><a href="index.html" class="block py-2 px-4 hover:text-green-400">Home</a></li>
+            <li><a href="achievements.html" class="block py-2 px-4 hover:text-green-400">Achievements</a></li>
+            <li><a href="#certifications" class="block py-2 px-4 hover:text-green-400">Certifications</a></li>
+            <li><a href="#projects" class="block py-2 px-4 hover:text-green-400">Projects</a></li>
+            <li><a href="#contact" class="block py-2 px-4 hover:text-green-400">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<script>
+    document.getElementById("menu-btn").addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("hidden");
+    });
+</script>
